@@ -21,4 +21,6 @@ from myproject import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('view1', views.view1, name='view1'),
+    path('view2', views.view2, name='view2'),
+    path('view2/<int:seconds>', views.view2, name='view2'),
 ]
