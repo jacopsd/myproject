@@ -1,6 +1,5 @@
 #!/bin/bash
-echo
-echo ">> Myproject STARTING UP <<"
+echo -e "\n>> Myproject STARTING UP <<"
 
 echo "Collect static"
 python manage.py collectstatic
