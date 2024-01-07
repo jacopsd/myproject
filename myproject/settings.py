@@ -15,8 +15,9 @@ import os
 
 PARAM1 = os.environ.get("PARAM1", "")
 PARAM2 = os.environ.get("PARAM2", "")
+PARAM3 = os.environ.get("PARAM3", "")
 
-print(f"Test params: {PARAM1=} {PARAM2=}")
+print(f"Test params: {PARAM1=} {PARAM2=} {PARAM3=}")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent

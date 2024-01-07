@@ -9,3 +9,11 @@ run:
   command: sh startup.sh
   network:
     port: 8000
+  secrets:
+    - name: PARAM1
+      value-from: "arn:aws:ssm:eu-central-1:177708864722:parameter/PARAM1"
+    - name: PARAM2
+      value-from: "arn:aws:ssm:eu-central-1:177708864722:parameter/PARAM2"
+  env:
+    - name: PARAM3
+      value: "example3"
