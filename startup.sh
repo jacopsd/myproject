@@ -1,2 +1,9 @@
 #!/bin/bash
-python manage.py collectstatic && gunicorn --workers 2 myproject.wsgi
+echo
+echo ">> Myproject STARTING UP <<"
+
+echo "Collect static"
+python manage.py collectstatic
+
+echo "Launch gunicorn"
+gunicorn --workers 2 myproject.wsgi

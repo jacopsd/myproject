@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 
+print("Processing settings...")
+
 PARAM1 = os.environ.get("PARAM1", "")
 PARAM2 = os.environ.get("PARAM2", "")
 PARAM3 = os.environ.get("PARAM3", "")
@@ -138,3 +140,5 @@ STORAGES = {
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+print("Processing settings - DONE")
